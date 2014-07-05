@@ -1,0 +1,4 @@
+Extra-Invoice
+=============
+
+Odoo module
