@@ -1,0 +1,15 @@
+<openerp>
+    <data>
+        <report 
+            id="report_extra_invoice"
+            string="Nombre: Factura Original"
+            model="account.invoice" 
+            report_type="qweb-pdf"
+            file="bts.report_invoice_extra" 
+            name="bts.report_invoice_extra" 
+    	    attachment_use="False"
+            attachment="(object.state in ('open','paid')) and ('FACTORG'+(object.number or '').replace('/','')+'.pdf')"
+
+        />
+    </data>
+</openerp>
