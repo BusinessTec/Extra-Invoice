@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
         <report 
@@ -7,9 +8,21 @@
             report_type="qweb-pdf"
             file="bts.report_invoice_extra" 
             name="bts.report_invoice_extra" 
-    	    attachment_use="False"
+    attachment_use="False"
             attachment="(object.state in ('open','paid')) and ('FACTORG'+(object.number or '').replace('/','')+'.pdf')"
 
         />
+     <report 
+            id="report_extra_invoice_2"
+            string="Nombre: Copia de Factura"
+            model="account.invoice" 
+            report_type="qweb-pdf"
+            file="bts.report_invoice_extra_2" 
+            name="bts.report_invoice_extra_2" 
+    attachment_use="False"
+            attachment="(object.state in ('open','paid')) and ('FACTCP'+(object.number or '').replace('/','')+'.pdf')"
+
+        />
+
     </data>
 </openerp>
