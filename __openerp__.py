@@ -22,9 +22,9 @@
 
 {
     'name': 'Extra Invoice Layouts',
-    'version': '1.0',
+    'version': '1.1',
     'sequence': 18,
-    'summary': 'Additional reports to be printed for invoice view',
+    'summary': 'Additional reports to be generated for invoice like invoice copy',
     'description': """
 Create additional printouts of invoices
 =======================================
